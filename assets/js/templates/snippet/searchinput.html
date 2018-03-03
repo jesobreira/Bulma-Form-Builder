@@ -1,0 +1,15 @@
+<!-- Search input-->
+<div class="field">
+  <label class="label" for="<%- id %>"><%- label %></label>
+  <div class="control">
+    <input
+    	id="<%- id %>"
+    	name="<%- id %>"
+    	type="text"
+    	<% if(placeholder) { %> placeholder="<%- placeholder %>" <% } %>
+    	class="input is-rounded <%- inputsize %> search-query"
+    	<% if(required) {%> required <% } %>
+    />
+    <% if (helptext.length > 0) { %><p class="help"><%- helptext %></p><% } %>
+  </div>
+</div>

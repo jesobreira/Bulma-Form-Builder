@@ -1,0 +1,22 @@
+<!-- Prepended checkbox -->
+<label class="label" for="<%- id %>"><%- label %></label>
+<div class="field has-addons">
+  <div class="control">
+    <a class="button is-static">
+      <label class="checkbox">
+        <input type="checkbox" <% if (checked){ %>checked="checked"<% } %>>
+      </label>
+    </a>
+  </div>
+  <div class="control">
+      <input
+        id="<%- id %>"
+        name="<%- id %>"
+        class="input <%- inputsize %>"
+        type="text"
+        <% if(placeholder) { %> placeholder="<%- placeholder %>" <% } %>
+        <% if(required) {%> required <% } %>
+      />
+  </div>
+</div>
+<% if (helptext.length > 0) { %><p class="help"><%- helptext %></p><% } %>

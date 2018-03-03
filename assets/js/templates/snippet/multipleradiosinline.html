@@ -1,0 +1,10 @@
+<!-- Multiple Radios (inline) -->
+<div class="field">
+  <label class="label" for="<%- name %>"><%- label %></label>
+  <div class="control"><% _.each(radios, function(radio, i){ %>
+    <label class="radio inline" for="<%- id+'-'+i %>">
+      <input type="radio" name="<%- id %>" id="<%- id+'-'+i %>" value="<%- radio %>" <% if(i < 1) { %>checked="checked" <% } %><% if(required){ %> required="required"<% } %>>
+      <%- radio %>
+    </label><% }); %>
+  </div>
+</div>

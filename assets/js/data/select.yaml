@@ -1,0 +1,70 @@
+-
+  title  : Select Basic
+  fields : 
+    id:
+      label  : ID / Name
+      type   : input
+      value  : selectbasic
+    label:
+      label  : Label Text
+      type   : input
+      value  : Select Basic
+    options:
+      label  : Options
+      type   : textarea-split
+      value  : ["Option one", "Option two"]
+    inputsize:
+      label: Input Size
+      type: select
+      value:
+        -
+          value    : is-small
+          label    : Small
+          selected : false
+        -
+          value    : ""
+          label    : Normal
+          selected : true
+        -
+          value    : is-medium
+          label    : Medium
+          selected : false
+        -
+          value    : is-large
+          label    : Large
+          selected : false
+-
+  title  : Select Multiple
+  fields : 
+    id:
+      label  : ID / Name
+      type   : input
+      value  : selectmultiple
+    label:
+      label  : Label Text
+      type   : input
+      value  : Select Multiple
+    options:
+      label  : Options
+      type   : textarea-split
+      value  : ["Option one", "Option two"]
+    inputsize:
+      label: Input Size
+      type: select
+      value:
+        -
+          value    : is-small
+          label    : Small
+          selected : false
+        -
+          value    : ""
+          label    : Normal
+          selected : true
+        -
+          value    : is-medium
+          label    : Medium
+          selected : false
+        -
+          value    : is-large
+          label    : Large
+          selected : false

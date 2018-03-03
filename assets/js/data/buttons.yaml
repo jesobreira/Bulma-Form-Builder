@@ -1,0 +1,145 @@
+-
+  title  : File Button
+  fields : 
+    id:
+      label  : ID / Name
+      type   : input
+      value  : filebutton
+    label:
+      label  : Label Text
+      type   : input
+      value  : File Button
+-
+  title  : Single Button
+  fields : 
+    id:
+      label  : ID / Name
+      type   : input
+      value  : singlebutton
+    label:
+      label  : Label Text
+      type   : input
+      value  : Single Button
+    buttonlabel:
+      label  : Button Label
+      type   : input
+      value  : Button
+    buttontype:
+      label  : Button Type
+      type   : select
+      value  :
+          -
+            value: is-default
+            label: Default 
+            selected: false
+          -
+            value: is-primary
+            label:  Primary 
+            selected: true
+          -
+            value: is-info 
+            label:  Info    
+            selected: false
+          -
+            value: is-success
+            label:  Success 
+            selected: false
+          -
+            value: is-warning
+            label:  Warning 
+            selected: false
+          - 
+            value: is-danger  
+            label:  Danger  
+            selected: false
+          -
+            value: is-inverted
+            label:  Inverse 
+            selected: false
+-
+  title  : Double Button
+  fields : 
+    id:
+      label  : Button 1 ID / Name
+      type   : input
+      value  : doublebutton
+    label:
+      label  : Label Text
+      type   : input
+      value  : Double Button
+    button1label:
+      label  : Button Label
+      type   : input
+      value  : Good Button
+    button1type:
+      label  : Button Type
+      type   : select
+      value  :
+          -
+            value: is-default
+            label: Default 
+            selected: false
+          -
+            value: is-primary
+            label:  Primary 
+            selected: false
+          -
+            value: is-info 
+            label:  Info    
+            selected: false
+          -
+            value: is-success
+            label:  Success 
+            selected: true
+          -
+            value: is-warning
+            label:  Warning 
+            selected: false
+          - 
+            value: is-danger  
+            label:  Danger  
+            selected: false
+          -
+            value: is-inverted
+            label:  Inverse 
+            selected: false
+    id2:
+      label  : Button 2 ID / Name
+      type   : input
+      value  : button2id
+    button2label:
+      label  : Button Label
+      type   : input
+      value  : Scary Button
+    button2type:
+      label  : Button Type
+      type   : select
+      value  :
+          -
+            value: is-default
+            label: Default 
+            selected: false
+          -
+            value: is-primary
+            label:  Primary 
+            selected: false
+          -
+            value: is-info 
+            label:  Info    
+            selected: false
+          -
+            value: is-success
+            label:  Success 
+            selected: false
+          -
+            value: is-warning
+            label:  Warning 
+            selected: false
+          - 
+            value: is-danger  
+            label:  Danger  
+            selected: true
+          -
+            value: is-inverted
+            label:  Inverse 
+            selected: false

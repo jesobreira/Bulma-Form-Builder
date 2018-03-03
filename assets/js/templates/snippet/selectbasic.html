@@ -1,0 +1,11 @@
+<!-- Select Basic -->
+<div class="field">
+  <label class="label" for="<%- id %>"><%- label %></label>
+  <div class="control">
+  	<div class="select">
+	    <select id="<%- id %>" name="<%- id %>" class="<%- inputsize %>"><% _.each(options, function(option) { %>
+	      <option><%- option %></option><% }); %>
+	    </select>
+	</div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<!-- Button Drop Down -->
+<label class="label" for="<%- id %>"><%- label %></label>
+<div class="field has-addons">
+  <div class="control">
+    <input
+      id="<%- id %>"
+      name="<%- id %>"
+      class="input <%- inputsize %>"
+      <% if(placeholder) { %> placeholder="<%- placeholder %>" <% } %>
+      type="text"
+      <% if(required) {%> required <% } %>
+    />
+  </div>
+  <div class="control">
+    <div class="dropdown is-hoverable">
+      <div class="dropdown-trigger">
+        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+          <span><%- buttontext %></span>
+          <span class="icon is-small">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <div class="dropdown-menu" role="menu">
+        <div class="dropdown-content"><% _.each(buttonoptions, function(value) { %>
+          <div class="dropdown-item">
+            <a href="#"><%- value %></a>
+          </div><% }); %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

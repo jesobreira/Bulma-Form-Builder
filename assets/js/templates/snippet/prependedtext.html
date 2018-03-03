@@ -1,0 +1,20 @@
+<!-- Prepended text-->
+<label class="label" for="<%- id %>"><%- label %></label>
+<div class="field has-addons">
+  <div class="control">
+    <a class="button is-static">
+      <%- prepend %>
+    </a>
+  </div>
+  <div class="control">
+    <input
+    	id="<%- id %>"
+    	name="<%- id %>"
+    	class="input <%- inputsize %>"
+    	<% if(placeholder) { %> placeholder="<%- placeholder %>" <% } %>
+    	type="text"
+    	<% if(required) {%> required <% } %>
+    />
+  </div>
+</div>
+<% if (helptext.length > 0) { %><p class="help"><%- helptext %></p><% } %>
